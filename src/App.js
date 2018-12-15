@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import ValidationComponent from "./ValidationComponent/ValidationComponent";
+import ChartComponent from "./ChartComponent/ChartComponent";
 
 class App extends Component {
   state={
-    text:"sadasd"
+    text:"test"
   };
 
 
@@ -16,14 +17,13 @@ class App extends Component {
   removeLetterHandler=(index)=>{
     const text = this.state.text.split('');
     text.splice(index,1);
-    this.setState({text:text.reduce((e,i)=>e+i,'')});
+    this.setState({text:text.join('')});
   };
 
   handleLetters=()=>{
     let lis =[];
     for(let i=0;i<this.state.text.length;i++){
-      lis.push(<div key={i}  onClick={()=>this.removeLetterHandler(i)} className='letter'>{ this.state.text[i]}</div>);
-
+        lis.push(<ChartComponent key={i}  onClick={()=>this.removeLetterHandler(i)} >{this.state.text[i]}</ChartComponent>);
     }
     return lis;
 

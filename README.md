@@ -1,3 +1,14 @@
+# Challenge 2: The number of letters, a validation component and a chart component  
+
+This is the second challenge in the course [React 16.6 - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux).
+
+
+#### Results: 
+![Error in load image](public/example.png)
+
+
+##
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
