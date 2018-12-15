@@ -36,7 +36,7 @@ class App extends Component {
 
         <div>
           <input type="text" value={this.state.text} onChange={this.changeTextHandler}/>
-          <h3>{this.state.text.length}</h3>
+          <h4>Length: {this.state.text.length}</h4>
           <ValidationComponent limit={6} length={this.state.text.length} />
         </div>
 
